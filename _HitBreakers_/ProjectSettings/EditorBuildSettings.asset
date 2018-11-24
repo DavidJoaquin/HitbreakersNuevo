@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/AEsteve/AEsteve_Scene/AEsteve_Scene.unity
     guid: 6e6de1e2e99b0dd40845fd8d008c4ce4
   - enabled: 0
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AEsteve/AEsteve_Scene/Mapa 1.unity
     guid: 3145a9e8deced394b8afd2e6489dec2d
+  - enabled: 1
+    path: Assets/Definitivo/Escenas/EscenaPrincipal.unity
+    guid: 064e6d8cd5e4b3041b65e7b5acf34e9c
   m_configObjects: {}

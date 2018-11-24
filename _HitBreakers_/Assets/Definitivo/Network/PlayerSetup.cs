@@ -8,6 +8,8 @@ public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     Behaviour[] componentsToDisable;
 
+    Camera camaraEscena;
+
     // Use this for initialization
     void Start () {
         if (!isLocalPlayer)
@@ -16,8 +18,26 @@ public class PlayerSetup : NetworkBehaviour {
             {
                 componentsToDisable[i].enabled = false;
             }
+
+        }
+        else
+        {
+            camaraEscena = Camera.main;
+            if (camaraEscena != null)
+            {
+                camaraEscena.gameObject.SetActive(false);
+            }
+            
         }
 	}
-	
-	
+
+    private void OnDisable()
+    {
+        if (camaraEscena != null)
+        {
+            camaraEscena.gameObject.SetActive(true);
+        }
+    }
+
+
 }
